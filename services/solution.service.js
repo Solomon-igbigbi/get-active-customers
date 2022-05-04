@@ -31,7 +31,7 @@ const getActiveCustomers = async (newData) => {
       }
     }
 
-    return { activeCustomers, count: activeCustomers.length };
+    return { count: activeCustomers.length, activeCustomers };
   } catch (err) {
     throw new error(err);
   }
