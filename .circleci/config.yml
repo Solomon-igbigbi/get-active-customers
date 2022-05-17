@@ -16,7 +16,7 @@ workflows:
           path: .
           platform: linux/amd64
           push-image: true
-          region: AWS_REGION
+          region: ${AWS_REGION}
           registry-id: AWS_REGISTRY
           repo: testing
           tag: 'latest,v1.0.${CIRCLE_BUILD_NUM}'
