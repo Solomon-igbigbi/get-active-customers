@@ -18,6 +18,8 @@ exports.analyze = async (req, res) => {
     return newData[element.customer].push(element);
   });
 
+  console.log("do stuff");
+
   try {
     const activeCustomers = await getActiveCustomers(newData);
     res.status(200).send({
